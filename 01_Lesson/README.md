@@ -1,6 +1,6 @@
 # Link basic CSS into HTML
 
-###🔗[Docs](https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/Getting_started)
+🔗 [Docs](https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/Getting_started)
 - Add CSS to our HTMl document
 - Styling HTML elements
 - Changing the default behavior of elements
