@@ -1,1 +1,1 @@
-# Fundamental Recap
+# Fundamentals Recap
