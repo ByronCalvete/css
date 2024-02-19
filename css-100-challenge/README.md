@@ -1,4 +1,4 @@
-# 100 Days CSS Challenge
+# 100 CSS Challenge
 
 ## Index
 - [Day #1](day1)
