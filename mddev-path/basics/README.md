@@ -4,4 +4,12 @@
 
 ## Resources
 - [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
-- [Manz](https://lenguajecss.com/css/#maquetacion-y-colocacion)
+- [Manz](https://lenguajecss.com/css/)
+
+### Topics
+- Colors
+- Selectors - Classes
+- Inheritance
+- Pseudo-classes
+- Border vs Outline
+- Combinators (selectors)
