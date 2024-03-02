@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"> <!--Codification -->
+    <meta name="viewport" content="width=device-width"> <!-- thw width of our page is the width of the screen in mobile devices -->
+    <title>Rocky "El loco"</title> <!-- It's important and a great opportunity to put the keywords for SEO-->
+    <meta name="description" content="Rocky's Portfolio for the next stage of your life as a freelancer.">
+
+    <!-- OPEN GRAPH tags -> opengraph.xyz, for check open graph meta tags -->
+    <meta property="og:title" content="Another title from opengraph">
+    <meta property="og:description" content="Another description from opengraph">
+    <meta property="og:image" content="./images/rocky.png">
+    <meta property="og:image:alt" content="A description of the opengraph image">
+    
+    <meta rel="alternate" href="this.website/me" hreflang="en-US"> <!-- Link to a site that be the "alternative" to this page, say to the search engine that this pages is the same but (in this case) in United States English and avoid that Google thinks that this is a duplicate content -->
+    <meta rel="canonical" href="mywebsite.com"> <!-- Say to the browser what is the principal page and it understand that www.website.com and website.com are the same page and not duplicate content -->
+
+    <meta name="robots" content="index, follow"> <!-- Indicate what page should be indexed and if you want that browser follow the links-->
+    <meta name="theme-color" content="#09f"> <!-- The color on searchbar in Safari, iOS and Android -->
+    <link rel="icon" type="image/png" href="./images/rocky.png">
+
+    <style>
+      h1 {
+        /* color: #cd853f; */
+        color: rgb(205 133 63 / 80%);
+        border-width: 3px;
+        border-style: solid;
+        border-color: currentColor; /*The currentColor is the color of the element's text or the parent element's text*/
+      }
+
+      body {
+        background: rgb(245 212 188);
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      }
+
+      .link {
+        color: red;
+      }
+
+      .link:hover {
+        /* border: 2px solid red; */
+        outline: 2px solid red;
+      }
+
+      .link:active {
+        outline: 2px solid green;
+      }
+
+      li:first-child {
+        color: blue;
+      }
+
+      li:last-child {
+        color: purple;
+      }
+
+      .test-article {
+        font-size: 24px;
+      }
+
+      .test-article > p { /* ">" for direct son, "~" for brothers that appear after and "+" for brothers that appear "immediatly next" of the element */
+        color:blue
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Rocky's Portfolio 🐶</h1>
+
+      <iframe style="width: 100%; aspect-ratio: 16/9;" width="560" height="315" src="https://www.youtube.com/embed/IY4x85zqoJM?si=GN-PANaX2wrv4Kmy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+      <nav>
+        <a class="link" href="#experience">Experience</a>
+        <a class="link" href="#projects">Projects</a> <!-- Internal links -->
+        <a class="link" href="https://bcalvete.xyz" target="_blank" rel="noreferer">My best friend's website</a>
+      </nav>
+    </header>
+
+    <dialog id="dialog">
+      <h1>Rocky "El loco"</h1>
+      <p>Again, I'm Rocky</p>
+      <button id="hide">Close modal</button>
+    </dialog>
+
+    <button id="show">About me</button>
+
+    <script>
+      window.show.addEventListener('click', () => {
+        window.dialog.showModal()
+      })
+
+      window.hide.addEventListener('click', () => {
+        window.dialog.close()
+      })
+    </script>
+
+    <video loop muted src="./images/rocky-video.mp4" width="500"></video> <!-- To keep in mind. I have <audio> tag, too -->
+
+    <main>
+
+      <article class="test-article">
+        <p>Paragraph 1</p>
+        <p>Another paragraph</p>
+        <footer>
+          <p>Footer paragraph 1</p>
+          <p>Footer paragraph 2</p>
+        </footer>
+        <p>Paragraph after footer</p>
+      </article>
+
+      <p>Good boy! With 5 years of experience <strong>shedding hair</strong> all over the house and a magister in sleep.</p>
+  
+      <h2 id="experience">Experience</h2>
+  
+      <ul>
+        <li>Orange 1 - 2018</li>
+        <li>Organe 2 - 2020</li>
+        <li>Murcia - 2022</li>
+        <li>Aranjuez - 2023</li>
+      </ul>
+  
+      <img src="./images/rocky.png" alt="Image of Rocky taking a walk and smiling like a crazy dog" title="Photo of Rocky" width="250">
+      </body>
+    
+      <h2 id="projects">Projects</h2>
+    
+      <aside>
+        <header>
+          <h3>My favorites challenges</h3>
+        </header>
+        <ol>
+          <li>Catch the ball</li>
+          <li>Make holes in the park</li>
+          <li>Not giving the ball back</li>
+          <li>Be crazy</li>
+        </ol>
+      </aside>
+    
+      <section>
+        <article>
+          <header>
+            <h4>My fisrt trip</h4>
+          </header>
+          <p>My best friend and I went to the park and ran like crazy after the ball</p>
+          <footer>
+            <small>Materials: the ball, my dog collar, my bottle of water and bags for my poop</small>
+          </footer>
+        </article>
+        <article>
+          <header>
+            <h4>My second trip</h4>
+          </header>
+          <p>My best friend and I went to the park and ran like crazy after the ball</p>
+          <footer>
+            <small>Materials: the ball, my dog collar, my bottle of water and bags for my poop</small>
+          </footer>
+        </article>
+        <article>
+          <header>
+            <h4>My third trip</h4>
+          </header>
+          <p>My best friend and I went to the park and ran like crazy after the ball</p>
+          <footer>
+            <small>Materials: the ball, my dog collar, my bottle of water and bags for my poop</small>
+          </footer>
+        </article>
+        <article>
+          <header>
+            <h4>Another photo</h4>
+            <img style="width:100%; aspect-ratio:921/637;" loading="lazy" src="./images/vision-pro.png" alt="Photo of Rocky">
+          </header>
+          <p>This is another photo of me and I'm crazy!</p>
+          <footer>
+            <small>The street's crazy!</small>
+          </footer>
+        </article>
+      </section>
+
+      <section>
+        <h2>FAQs</h2>
+
+        <details>
+          <summary>What is your favorite place to visit?</summary>
+          <p>It's undoubtedly the beach</p>
+        </details>
+
+        <details>
+          <summary>Why do you have two beds?</summary>
+          <p>Becuase, I love it sleep!</p>
+        </details>
+      </section>
+
+      <section>
+        <h2>Contact me</h2>
+
+        <form method="post" action="/">
+          <fieldset>
+            <legend>Personal Info</legend>
+            <div>
+              <label>Name:
+                <input type="text" name="name" placeholder="Your name" required>
+              </label>
+            </div>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="email@email.com" required>
+          </fieldset>
+
+          <fieldset>
+            <legend>Aditional info</legend>
+            <div>
+              <label>Phone:
+                <input type="tel" name="phone" placeholder="555 666 777" required>
+              </label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Other</legend>
+
+            <div>
+              <label for="why">¿Why do you want to contact with me?</label>
+              <select name="why" id="why">
+                <option value="1">Biting other dogs</option>
+                <option value="2">Walking with me</option>
+                <option value="3">Play catch! 🎾</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="terms">I'm a dog and accept the terms of the Rocky Portfolio</label>
+              <input type="checkbox" name="terms" id="terms" required>
+            </div>
+
+            <div>
+              <datalist id="languages">
+                <option value="Ball">Ball</option>
+                <option value="Bottle">Bottle</option>
+                <option value="Trash">Trash</option>
+                <option value="Frisbee">Frisbee</option>
+              </datalist>
+              <label>¿Which toy we will pay it?</label>
+              <input list="languages" name="languages">
+            </div>
+          </fieldset>
+          <button>Send</button>
+        </form>
+      </section>
+
+    </main>
+
+    <footer>
+      Copyright &copy; 2023 - The Rocky's Portfolio
+      <a href="mailto:me@email.com">Send me an e-mail</a>
+      <a href="tel:+573112345678">Call me</a>
+    </footer>
+
+</html>
