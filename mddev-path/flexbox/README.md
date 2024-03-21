@@ -5,5 +5,23 @@
 ## Resources
 - [z-index](https://web.dev/learn/css/z-index)
 - [Stacking context (for z-index)](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_positioned_layout/Understanding_z-index/Stacking_context)
+- [Flebox - Game](https://flexboxfroggy.com/)
 
 ### Topics
+- Box model
+- Overflow
+- Text overflow
+- Position (absolute, relative, sticky, fixed)
+- Center with absolute
+- z-index
+- Flexbox
+- flex-direction
+- direction
+- writing mode
+- flex-wrap
+- flex-grow-shrink-basis
+- order
+- justify-content
+- gap
+- align-items
+- align-content
