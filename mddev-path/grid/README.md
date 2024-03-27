@@ -7,3 +7,17 @@
 - [Grid - Game](https://cssgridgarden.com/)
 
 ### Topics
+- Introduction to Grid
+- Grid vs Flex
+- fr unit
+- grid-template-columns
+- grid-template-rows
+- repeat()
+- auto-fill & auto-fit
+- gap
+- grid-column-start/end
+- grid-row-start/end
+- grid-column/row
+- Create layouts
+- Align elements
+- Centering the content
