@@ -7,6 +7,10 @@ body {
   gap: 32px;
 }
 
+hr {
+  width: 100%;
+}
+
 .pulser {
   width: 50px;
   height: 50px;
@@ -49,7 +53,7 @@ body {
 }
 
 /* transition-delay property in action */
-.container {
+.container2 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -67,7 +71,7 @@ body {
   opacity: 0;
 }
 
-.container:hover .pulser1 {
+.container2:hover .pulser1 {
   opacity: 1;
 }
 
@@ -81,4 +85,138 @@ body {
 
 .pulser1:last-child {
   transition-delay: 800ms;
+}
+
+/* Animations */
+
+.pulser2 {
+  width: 50px;
+  height: 50px;
+  background: #09f;
+  border-radius: 100%;
+  position: relative;
+  /* animation-name: move; */
+  /* animation-duration: 2s; */
+}
+
+.pulser2:hover {
+  animation-name: move;
+  animation-duration: 2s;
+}
+
+@keyframes move {
+  from {
+    transform: translateY(0px);
+  }
+
+  to {
+    transform: translateY(50px);
+  }
+}
+
+/* Animations: example 2 */
+.pulser3 {
+  width: 50px;
+  height: 50px;
+  background: #09f;
+  border-radius: 100%;
+  position: relative;
+}
+
+.pulser3::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #09f;
+  border-radius: 100%;
+  z-index: -1;
+
+  animation-name: pulse;
+  animation-duration: 2s;
+  animation-delay: 3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 5;
+  /* animation-iteration-count: infinite; never stop */
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    scale: 1.5;
+    opacity: 20%;
+  }
+
+  100% {
+    opacity: 35%;
+  }
+}
+
+/* Animations: example 3 - direction */
+
+.container5 img {
+  width: 80px;
+  /* animation-name: move-mario; */
+  /* animation-duration: 2s; */
+  /* animation-timing-function: linear; */
+
+  /* animation-direction: reverse; */
+  /* animation-direction: alternate; */
+  /* animation-direction: normal; default value */
+
+  /* animation-iteration-count: infinite; */
+
+  /* Indicate the behavior before and after the animation */
+  /* animation-fill-mode: both; */
+
+  /* Animation shorcut */
+  animation: 
+    move-mario 2s steps(120) both,
+    bigger 1s linear 2s both;
+
+  /* To pause the animation when I hover */
+  &:hover {
+    animation-play-state: paused;
+    opacity: 70%;
+    filter: contrast(100%);
+    cursor: progress;
+  }
+}
+
+@keyframes move-mario {
+  /* To keep in mind: I can omit the 'from' if the values that the element has are the default values */
+  from {
+    transform: translateX(0);
+  } 
+
+  to {
+    transform: translateX(200px);
+  }
+}
+
+@keyframes bigger {
+  0% {
+    scale: 1;
+  }
+
+  25% {
+    scale: 1.4;
+  }
+
+  50% {
+    scale: 2;
+  }
+
+  75% {
+    scale: 1.6;
+  }
+
+  100% {
+    scale: 2;
+  }
 }
