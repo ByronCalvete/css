@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta chatset="UTF-8">
+    <meta name="description" content="Hambuger Menu Icon">
+    <meta name="viewport" content="width=device-width">
+    <title>Challenge 2 - Hamburguer menu icon</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./2.png" type="image/png">
+  </head>
+  <body>
+    <div class="frame">
+      <div class="center">
+        <div class="menu-icon">
+          <div class="line-1 no-animation"></div>
+          <div class="line-2 no-animation"></div>
+          <div class="line-3 no-animation"></div>
+        </div>
+      </div>
+    </div>
+    <script>
+      const menu = document.querySelector('.menu-icon')
+      const animation = document.querySelectorAll('.no-animation')
+
+      menu.addEventListener('click', () => {
+        menu.classList.toggle('active')
+      })
+
+      animation.forEach(line => line.addEventListener('click', () => {
+        animation.forEach(element => element.classList.remove('no-animation'))
+      }))
+    </script>
+  </body>
+</html>
