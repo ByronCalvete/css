@@ -4,4 +4,6 @@
 
 Custom build number with gradient.
 
-![Image of challenge](./image-final.png)
+<img src='./image-final.png' width=500>
+
+[Back to Home](..)
