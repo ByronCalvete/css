@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --cubic-bezier: cubic-bezier(.21, .98, .6, .99);
+}
+
+body {
+  margin: 0;
+  background: rgb(216, 216, 216);
+}
+
+.framer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  transform: translate(-50%, -50%);
+  background: #e56262;
+  border-radius: 5px;
+  box-shadow: 1px 2px 10px 0 rgba(0,0,0,.3);
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle-1 {
+  position: absolute;
+  z-index: 3;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #fff;
+  animation: jump-circle-1 2s var(--cubic-bezier) infinite alternate;
+  animation-fill-mode: both;
+}
+
+.circle-2 {
+  position: absolute;
+  z-index: 2;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #fff;
+  animation: jump-circle-2 2s var(--cubic-bezier) infinite alternate;
+  animation-fill-mode: both;
+}
+
+.circle-3 {
+  position: absolute;
+  z-index: 1;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: #fff;
+  animation: jump-circle-3 2s var(--cubic-bezier) infinite alternate;
+  animation-fill-mode: both;
+}
+
+@keyframes jump-circle-1 {
+  0%, 70% {
+    box-shadow: 2px 2px 3px 2px rgba(0,0,0,.2);
+    transform: scale(0);
+  }
+
+  100% {
+    box-shadow: 10px 10px 15px 2px rgba(0,0,0,.3);
+    transform: scale(1);
+  }
+}
+
+@keyframes jump-circle-2 {
+  0%, 40% {
+    box-shadow: 2px 2px 3px 2px rgba(0,0,0,.2);
+    transform: scale(0);
+  }
+
+  100% {
+    box-shadow: 10px 10px 15px 2px rgba(0,0,0,.3);
+    transform: scale(1);
+  }
+}
+
+@keyframes jump-circle-3 {
+  0%, 10% {
+    box-shadow: 2px 2px 3px 2px rgba(0,0,0,.2);
+    transform: scale(0);
+  }
+
+  100% {
+    box-shadow: 10px 10px 15px 0 rgba(0,0,0,.3);
+    transform: scale(1);
+  }
+}
