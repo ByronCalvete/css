@@ -1,4 +1,4 @@
-# Mddev Path - Guide
+# Mid Path - Guide
 
 ## Index
 - [Basics](basics)

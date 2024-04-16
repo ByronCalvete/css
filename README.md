@@ -1,7 +1,7 @@
 # CSS Guide
 
 ## Index 
-- [DG Path](dg-path)
-- [Mddev Path](mddev-path)
+- [Basic Path](basic-path)
+- [Mid Path](mid-path)
 - [Pro Path](pro-path)
 - [100 Day Challenge](css-100-challenge)
