@@ -9,9 +9,10 @@
 body {
   margin: 0;
   background: rgb(216, 216, 216);
+  font-family: 'Open Sans', Helvetica, sans-serif;
 }
 
-.framer {
+.frame {
   position: absolute;
   top: 50%;
   left: 50%;

@@ -1,0 +1,155 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --blue: #5f98cd;
+  --blue-dark: #264057;
+  --blue-light: #b2daff;
+}
+
+body {
+  margin: 0;
+  background: rgb(216, 216, 216);
+  font-family: 'Open Sans', Helvetica, sans-serif;
+}
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  background: var(--blue-dark);
+  box-shadow: 1px 2px 10px 0 rgba(0,0,0,.3);
+  overflow: hidden;
+
+  /* Font */
+  color: #666;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.panel {
+  position: absolute;
+  z-index: 2;
+  height: 300px;
+  width: 300px;
+  top: 50px;
+  left: 50px;
+  background: #fff;
+  border-radius: 3px;
+  box-shadow: 10px 10px 15px 0 rgba(0,0,0,.3);
+  transition: .5s ease-in-out;
+
+  &.show-menu {
+    transform: translate3d(150px, 0, 0);
+  }
+
+  .header {
+    height: 60px;
+    width: 100%;
+    background: var(--blue);
+
+    .menu-icon {
+      position: absolute;
+      width: 29px;
+      height: 15px;
+      top: 23px;
+      left: 20px;
+      cursor: pointer;
+
+      .dash-top {
+        position: absolute;
+        width: 20px;
+        height: 3px;
+        top: 0;
+        left: 0;
+        background: var(--blue-light);
+        border-radius: 3px;
+        transition: .2s ease-in-out;
+      }
+
+      .dash-bottom {
+        position: absolute;
+        width: 29px;
+        height: 3px;
+        bottom: 0;
+        background: var(--blue-light);
+        border-radius: 3px;
+        transition: .2s ease-in-out;
+      }
+
+      .circle {
+        position: absolute;
+        height: 7px;
+        width: 7px;
+        border-radius: 50%;
+        right: 0;
+        top: -2px;
+        background: var(--blue-light);
+        transition: .2s ease-in-out;
+      }
+
+      &:hover {
+        .dash-top,
+        .dash-bottom,
+        .circle {
+          background: #fff;
+        }
+      }
+    }
+
+    .title {
+      display: block;
+      text-align: center;
+      line-height: 60px;
+      color: #fff;
+      font-weight: 600;
+      font-size: 15px;
+    }
+
+    .search-input {
+      position: absolute;
+      top: 13px;
+      right: 55px;
+      width: 230px;
+      height: 34px;
+      border-radius: 17px;
+      border: none;
+      padding: 0 17px;
+      font-size: 16px;
+      transition: .3s ease-in-out;
+      transform: translateX(15px);
+      opacity: 0;
+      pointer-events: none;
+    }
+    
+    &:focus {
+      outline: none;
+    }
+
+    &:active  {
+      transform: translateX(0);
+      opacity: 1;
+      pointer-events: all;
+    }
+
+    .search-icon {
+      position: absolute;
+      z-index: 2;
+      font-size: 21px;
+      color: var(--blue-light);
+      top: 18px;
+      right: 20px;
+      transition: .2s ease;
+      cursor: pointer;
+
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+}
