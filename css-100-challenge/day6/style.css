@@ -32,3 +32,142 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: grayscale;
 }
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 320px;
+  height: 300px;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  border-radius: 3px;
+  box-shadow: 10px 10px 15px 0 rgba(0,0,0,.3);
+  overflow: hidden;
+
+  display: grid;
+  grid-template-columns: 200px 120px;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+
+  .image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .circle-1 {
+      position: absolute;
+      width: 76px;
+      height: 76px;
+      border: 1px solid;
+      border-color: var(--brown) var(--brown) var(--brown) transparent;
+      border-radius: 50%;
+      transition: 1.5s ease-in-out;
+    }
+
+    .circle-2 {
+      position: absolute;
+      width: 82px;
+      height: 82px;
+      border-radius: 50%;
+      border: 1px solid;
+      border-color: var(--brown) transparent var(--brown) var(--brown);
+      transition: 1.5s ease-in-out;
+    }
+
+    img {
+      border-radius: 50%;
+      background: #f5e8df;
+    }
+
+    &:hover {
+      cursor: pointer;
+
+      .circle-1 {
+        transform: rotate(360deg);
+      }
+
+      .circle-2 {
+        transform: rotate(-360deg);
+      }
+    }
+  }
+
+  .description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .name {
+      font-size: 15px;
+      font-weight: 600;
+    }
+  
+    .job {
+      font-size: 12px;
+      font-weight: 300;
+    }
+  }
+
+  .actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .btn {
+      width: 120px;
+      height: 30px;
+      background: none;
+      border: 1px solid var(--brown);
+      border-radius: 15px;
+      font-size: 12px;
+      font-weight: 600;
+      transition: .3s ease-in-out;
+      color: var(--brown);
+
+      &:hover {
+        background: var(--brown);
+        color: #fff;
+      }
+    }
+  }
+}
+
+.stats {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .box {
+    text-align: center;
+    align-content: center;
+    width: 120px;
+    height: 99px;
+    background: #f5e8df;
+    transition: .4s ease-in-out;
+
+    &:hover {
+      background: #e1cfc2;
+      cursor: pointer;
+    }
+
+    span {
+      display: block;
+    }
+  
+    .value {
+      font-size: 18px;
+      font-weight: 600;
+    }
+  
+    .parameter {
+      font-size: 11px;
+    }
+  }
+}
