@@ -125,12 +125,13 @@ body {
       transform: translateX(15px);
       opacity: 0;
       pointer-events: none;
+      color: #666;
       
       &:focus {
         outline: none;
       }
 
-      &:active  {
+      &.active  {
         transform: translateX(0);
         opacity: 1;
         pointer-events: all;
@@ -155,7 +156,6 @@ body {
 
   .notifications {
     position: relative;
-    /* height: 100%; */
     overflow: hidden;
 
     .line {
@@ -173,17 +173,17 @@ body {
       margin: 25px 20px 25px 43px;
 
       &:nth-child(2) {
-        animation: here-am-i .5s ease-out;
+        animation: here-am-i .5s ease-out .2s;
         animation-fill-mode: both;
       }
 
       &:nth-child(3) {
-        animation: here-am-i .5s ease-out;
+        animation: here-am-i .5s ease-out .4s;
         animation-fill-mode: both;
       }
 
       &:nth-child(4) {
-        animation: here-am-i .5s ease-out;
+        animation: here-am-i .5s ease-out .6s;
         animation-fill-mode: both;
       }
 
@@ -219,4 +219,66 @@ body {
   }
 }
 
+.menu {
+  position: absolute;
+  width: 170px;
+  height: 270px;
+  top: 65px;
+  left: 50px;
+  background: #43627d;
+  border-radius: 3px;
+  transition: .5s ease-in-out;
+  transform: translate3d(20px,0,0);
+  align-content: center;
 
+  &.active {
+    box-shadow: 5px 5px 8px 0 rgba(0,0,0,.2);
+    transform: translate3d(0,0,0);
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+    color: #93b2cd;
+    font-size: 12px;
+    line-height: 14px;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    height: 45px;
+
+    &:hover {
+      color: #fff;
+      background: #385269;
+
+      img {
+        filter: drop-shadow(0px 1000px 0 #fff);
+        transform: translateY(-1000px);
+      }
+    }
+
+    img {
+      /* That is no the best way to do it. the best way is with svg icons */
+      filter: drop-shadow(0px 1000px 0 #93b2cd);
+      transform: translateY(-1000px);
+    }
+  }
+}
+
+@keyframes here-am-i {
+  from {
+    transform: translate3d(0, 50px, 0);
+    opacity: 0;
+  }
+
+  to {
+    transform: translate3d(0,0,0);
+    opacity: 1;
+  }
+}
