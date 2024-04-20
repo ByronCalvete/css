@@ -1,0 +1,168 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: rgb(216, 216, 216);
+}
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  transform: translate(-50%, -50%);
+  background: #1a2238;
+  border-radius: 5px;
+  box-shadow: 1px 2px 10px 0 rgba(0,0,0,.3);
+  overflow: hidden;
+
+  /* Font */
+  color: #394568;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.moon {
+  position: absolute;
+  width: 67px;
+  height: 67px;
+  top: 45px;
+  left: 55px;
+  border-radius: 50%;
+  background: #f6edbd;
+  overflow: hidden;
+  box-shadow: 0 0 10px 0 #f6edbd;
+  animation: rise 1s ease-in-out;
+
+  [class^='crater-'] {
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    border-radius: 10px;
+    background: #ece1a8;
+  }
+
+  .crater-1 {
+    width: 11px;
+    height: 11px;
+    top: 9px;
+    left: 28px;
+  }
+
+  .crater-2 {
+    width: 11px;
+    height: 11px;
+    top: 12px;
+    left: 0;
+  }
+
+  .crater-3 {
+    width: 11px;
+    height: 11px;
+    top: 56px;
+    left: 10px;
+  }
+
+  .crater-4 {
+    width: 6px;
+    height: 6px;
+    top: 37px;
+    left: 49px;
+  }
+
+  .crater-5 {
+    width: 6px;
+    height: 6px;
+    top: 24px;
+    left: 61px;
+  }
+
+  .crater-6 {
+    width: 6px;
+    height: 6px;
+    top: 55px;
+    left: 33px;
+  }
+
+  .crater-7 {
+    width: 6px;
+    height: 6px;
+    top: 17px;
+    left: 46px;
+  }
+
+  .crater-8 {
+    width: 6px;
+    height: 6px;
+    top: 28px;
+    left: 27px;
+  }
+
+  .crater-9 {
+    width: 6px;
+    height: 6px;
+    top: 39px;
+    left: 17px;
+  }
+
+  .crater-10 {
+    width: 4px;
+    height: 4px;
+    top: 25px;
+    left: 15px;
+  }
+
+  .crater-11 {
+    width: 4px;
+    height: 4px;
+    top: 37px;
+    left: 37px;
+  }
+}
+
+[class^='hill-'] {
+  position: absolute;
+  z-index: 2;
+  width: 337px;
+  height: 281px;
+  border-radius: 50%;
+}
+
+.hill-bg-1 {
+  top: 201px;
+  left: -57px;
+  background: #26314f;
+}
+
+.hill-bg-2 {
+  top: 197px;
+  left: 177px;
+  background: #26314f;
+}
+
+.hill-fg-1 {
+  background: #303c5d;
+  top: 248px;
+  left: -137px;
+}
+
+.hill-fg-2 {
+  background: #303c5d;
+  top: 221px;
+  left: 63px;
+}
+
+.hill-fg-3 {
+  background: #303c5d;
+  top: 248px;
+  left: 292px;
+}
+
+@keyframes rise {
+  0% { transform: translate(-20px,200px) }
+  70% { transform: translate(0,-10px) }
+  100% { transform: translate(0,0);}
+}
