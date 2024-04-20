@@ -5,6 +5,7 @@
 body {
   margin: 0;
   background: rgb(216, 216, 216);
+  font-family: 'Open Sans', Helvetica, sans-serif;
 }
 
 .frame {
@@ -129,6 +130,7 @@ body {
   width: 337px;
   height: 281px;
   border-radius: 50%;
+  box-shadow: 1px 2px 20px rgba(0,0,0,.2);
 }
 
 .hill-bg-1 {
@@ -140,7 +142,7 @@ body {
 .hill-bg-2 {
   top: 197px;
   left: 177px;
-  background: #26314f;
+  background: rgb(38, 49, 79);
 }
 
 .hill-fg-1 {
@@ -159,6 +161,49 @@ body {
   background: #303c5d;
   top: 248px;
   left: 292px;
+}
+
+.front {
+  position: absolute;
+  z-index: 3;
+  width: 400px;
+  height: 90px;
+  left: 0;
+  bottom: 0;
+  background: #fff;
+  display: grid;
+  grid-template-columns: 110px repeat(2, 1fr);
+
+  .temperature {
+    font-size: 45px;
+    font-weight: 400;
+    line-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    span {
+      font-size: 20px;
+      align-content: center;
+      margin-top: -10px;
+    }
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 300;
+
+    strong {
+      padding-left: 8px;
+      font-weight: 400;
+    }
+  }
 }
 
 @keyframes rise {
