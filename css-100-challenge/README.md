@@ -8,4 +8,4 @@ Challenge | [<img src='./day1/image-final.png' width=100>](day1) | [<img src='./
 
 Days | #6 | #7 | #8 | #9 | #10 
 --- | --- | --- | --- | --- | ---
-Challenge | [<img src='./day6/image-final.png' width=100>](day6) | [<img src='./day7/image-final-1.png' width=100>](day7) |  |  | 
+Challenge | [<img src='./day6/image-final.png' width=100>](day6) | [<img src='./day7/image-final-1.png' width=100>](day7) | [<img src='./day8/image-final.png' width=100>](day8) |  | 
