@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+:root {
+  --drop-color: #7fc1f9;
+}
+
 body {
   margin: 0;
   background: rgb(216, 216, 216);
@@ -206,8 +210,1144 @@ body {
   }
 }
 
+.drop-big-1 {
+  position: absolute;
+  z-index: 4;
+  left: 18px;
+  bottom: 90px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--drop-color);
+  animation: drop .8s linear .2s infinite;
+  animation-fill-mode: both;
+
+  &::before {
+    position: absolute;
+    content: '';
+    display: block;
+    top: -2px;
+    left: 1px;
+    width: 6px;
+    height: 6px;
+    background: var(--drop-color);
+    border-radius: 3px;
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    display: block;
+    top: -5px;
+    left: 2px;
+    width: 4px;
+    height: 10px;
+    background: var(--drop-color);
+    border-radius: 50%;
+  }
+}
+
+.drop-big-2 {
+  position: absolute;
+  z-index: 4;
+  left: 56px;
+  bottom: 90px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--drop-color);
+  animation: drop .9s linear .4s infinite;
+  animation-fill-mode: both;
+
+  &::before {
+    position: absolute;
+    content: '';
+    display: block;
+    top: -2px;
+    left: 1px;
+    width: 6px;
+    height: 6px;
+    background: var(--drop-color);
+    border-radius: 3px;
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    display: block;
+    top: -5px;
+    left: 2px;
+    width: 4px;
+    height: 10px;
+    background: var(--drop-color);
+    border-radius: 50%;
+  }
+}
+
+.drop-big-3 {
+  position: absolute;
+  z-index: 4;
+  left: 94px;
+  bottom: 90px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--drop-color);
+  animation: drop .8s linear .6s infinite;
+  animation-fill-mode: both;
+
+  &::before {
+    position: absolute;
+    content: '';
+    display: block;
+    top: -2px;
+    left: 1px;
+    width: 6px;
+    height: 6px;
+    background: var(--drop-color);
+    border-radius: 3px;
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    display: block;
+    top: -5px;
+    left: 2px;
+    width: 4px;
+    height: 10px;
+    background: var(--drop-color);
+    border-radius: 50%;
+  }
+}
+
+.drop-big-4 {
+  position: absolute;
+  z-index: 4;
+  left: 132px;
+  bottom: 90px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--drop-color);
+  animation: drop .9s linear .8s infinite;
+  animation-fill-mode: both;
+
+  &::before {
+    position: absolute;
+    content: '';
+    display: block;
+    top: -2px;
+    left: 1px;
+    width: 6px;
+    height: 6px;
+    background: var(--drop-color);
+    border-radius: 3px;
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    display: block;
+    top: -5px;
+    left: 2px;
+    width: 4px;
+    height: 10px;
+    background: var(--drop-color);
+    border-radius: 50%;
+  }
+}
+
+.drop-big-5 {
+  position: absolute;
+  z-index: 4;
+  left: 170px;
+  bottom: 90px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--drop-color);
+  animation: drop .8s linear 1s infinite;
+  animation-fill-mode: both;
+
+  &::before {
+    position: absolute;
+    content: '';
+    display: block;
+    top: -2px;
+    left: 1px;
+    width: 6px;
+    height: 6px;
+    background: var(--drop-color);
+    border-radius: 3px;
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    display: block;
+    top: -5px;
+    left: 2px;
+    width: 4px;
+    height: 10px;
+    background: var(--drop-color);
+    border-radius: 50%;
+  }
+}
+
+.drop-big-6 {
+  position: absolute;
+  z-index: 4;
+  left: 208px;
+  bottom: 90px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--drop-color);
+  animation: drop .9s linear 1.2s infinite;
+  animation-fill-mode: both;
+
+  &::before {
+    position: absolute;
+    content: '';
+    display: block;
+    top: -2px;
+    left: 1px;
+    width: 6px;
+    height: 6px;
+    background: var(--drop-color);
+    border-radius: 3px;
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    display: block;
+    top: -5px;
+    left: 2px;
+    width: 4px;
+    height: 10px;
+    background: var(--drop-color);
+    border-radius: 50%;
+  }
+}
+
+.drop-big-7 {
+  position: absolute;
+  z-index: 4;
+  left: 266px;
+  bottom: 90px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--drop-color);
+  animation: drop .8s linear 1.4s infinite;
+  animation-fill-mode: both;
+
+  &::before {
+    position: absolute;
+    content: '';
+    display: block;
+    top: -2px;
+    left: 1px;
+    width: 6px;
+    height: 6px;
+    background: var(--drop-color);
+    border-radius: 3px;
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    display: block;
+    top: -5px;
+    left: 2px;
+    width: 4px;
+    height: 10px;
+    background: var(--drop-color);
+    border-radius: 50%;
+  }
+}
+
+.drop-big-8 {
+  position: absolute;
+  z-index: 4;
+  left: 284px;
+  bottom: 90px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--drop-color);
+  animation: drop .9s linear 1.6s infinite;
+  animation-fill-mode: both;
+
+  &::before {
+    position: absolute;
+    content: '';
+    display: block;
+    top: -2px;
+    left: 1px;
+    width: 6px;
+    height: 6px;
+    background: var(--drop-color);
+    border-radius: 3px;
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    display: block;
+    top: -5px;
+    left: 2px;
+    width: 4px;
+    height: 10px;
+    background: var(--drop-color);
+    border-radius: 50%;
+  }
+}
+
+.drop-big-9 {
+  position: absolute;
+  z-index: 4;
+  left: 322px;
+  bottom: 90px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--drop-color);
+  animation: drop .8s linear 1.8s infinite;
+  animation-fill-mode: both;
+
+  &::before {
+    position: absolute;
+    content: '';
+    display: block;
+    top: -2px;
+    left: 1px;
+    width: 6px;
+    height: 6px;
+    background: var(--drop-color);
+    border-radius: 3px;
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    display: block;
+    top: -5px;
+    left: 2px;
+    width: 4px;
+    height: 10px;
+    background: var(--drop-color);
+    border-radius: 50%;
+  }
+}
+
+.drop-big-10 {
+  position: absolute;
+  z-index: 4;
+  left: 360px;
+  bottom: 90px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--drop-color);
+  animation: drop .9s linear 2s infinite;
+  animation-fill-mode: both;
+
+  &::before {
+    position: absolute;
+    content: '';
+    display: block;
+    top: -2px;
+    left: 1px;
+    width: 6px;
+    height: 6px;
+    background: var(--drop-color);
+    border-radius: 3px;
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    display: block;
+    top: -5px;
+    left: 2px;
+    width: 4px;
+    height: 10px;
+    background: var(--drop-color);
+    border-radius: 50%;
+  }
+}
+
+.drop-medium-1 {
+  position: absolute;
+  z-index: 4;
+  left: 18px;
+  bottom: 90px;
+  opacity: .6;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--drop-color);
+  animation: drop 1.4s linear 2s infinite;
+  animation-fill-mode: both;
+
+  &::before {
+    position: absolute;
+    content: '';
+    display: block;
+    top: -2px;
+    left: 1px;
+    width: 4px;
+    height: 4px;
+    background: var(--drop-color);
+    border-radius: 3px;
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    display: block;
+    top: -4px;
+    left: 2px;
+    width: 2px;
+    height: 6px;
+    background: var(--drop-color);
+    border-radius: 50%;
+  }
+}
+
+.drop-medium-2 {
+  position: absolute;
+  z-index: 4;
+  left: 56px;
+  bottom: 90px;
+  opacity: .6;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--drop-color);
+  animation: drop 1.5s linear 1.8s infinite;
+  animation-fill-mode: both;
+
+  &::before {
+    position: absolute;
+    content: '';
+    display: block;
+    top: -2px;
+    left: 1px;
+    width: 4px;
+    height: 4px;
+    background: var(--drop-color);
+    border-radius: 3px;
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    display: block;
+    top: -4px;
+    left: 2px;
+    width: 2px;
+    height: 6px;
+    background: var(--drop-color);
+    border-radius: 50%;
+  }
+}
+
+.drop-medium-3 {
+  position: absolute;
+  z-index: 4;
+  left: 94px;
+  bottom: 90px;
+  opacity: .6;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--drop-color);
+  animation: drop 1.4s linear 1.6s infinite;
+  animation-fill-mode: both;
+
+  &::before {
+    position: absolute;
+    content: '';
+    display: block;
+    top: -2px;
+    left: 1px;
+    width: 4px;
+    height: 4px;
+    background: var(--drop-color);
+    border-radius: 3px;
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    display: block;
+    top: -4px;
+    left: 2px;
+    width: 2px;
+    height: 6px;
+    background: var(--drop-color);
+    border-radius: 50%;
+  }
+}
+
+.drop-medium-4 {
+  position: absolute;
+  z-index: 4;
+  left: 132px;
+  bottom: 90px;
+  opacity: .6;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--drop-color);
+  animation: drop 1.5s linear 1.4s infinite;
+  animation-fill-mode: both;
+
+  &::before {
+    position: absolute;
+    content: '';
+    display: block;
+    top: -2px;
+    left: 1px;
+    width: 4px;
+    height: 4px;
+    background: var(--drop-color);
+    border-radius: 3px;
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    display: block;
+    top: -4px;
+    left: 2px;
+    width: 2px;
+    height: 6px;
+    background: var(--drop-color);
+    border-radius: 50%;
+  }
+}
+
+.drop-medium-5 {
+  position: absolute;
+  z-index: 4;
+  left: 170px;
+  bottom: 90px;
+  opacity: .6;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--drop-color);
+  animation: drop 1.4s linear 1.2s infinite;
+  animation-fill-mode: both;
+
+  &::before {
+    position: absolute;
+    content: '';
+    display: block;
+    top: -2px;
+    left: 1px;
+    width: 4px;
+    height: 4px;
+    background: var(--drop-color);
+    border-radius: 3px;
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    display: block;
+    top: -4px;
+    left: 2px;
+    width: 2px;
+    height: 6px;
+    background: var(--drop-color);
+    border-radius: 50%;
+  }
+}
+
+.drop-medium-6 {
+  position: absolute;
+  z-index: 4;
+  left: 208px;
+  bottom: 90px;
+  opacity: .6;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--drop-color);
+  animation: drop 1.5s linear 1s infinite;
+  animation-fill-mode: both;
+
+  &::before {
+    position: absolute;
+    content: '';
+    display: block;
+    top: -2px;
+    left: 1px;
+    width: 4px;
+    height: 4px;
+    background: var(--drop-color);
+    border-radius: 3px;
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    display: block;
+    top: -4px;
+    left: 2px;
+    width: 2px;
+    height: 6px;
+    background: var(--drop-color);
+    border-radius: 50%;
+  }
+}
+
+.drop-medium-7 {
+  position: absolute;
+  z-index: 4;
+  left: 246px;
+  bottom: 90px;
+  opacity: .6;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--drop-color);
+  animation: drop 1.5s linear .8s infinite;
+  animation-fill-mode: both;
+
+  &::before {
+    position: absolute;
+    content: '';
+    display: block;
+    top: -2px;
+    left: 1px;
+    width: 4px;
+    height: 4px;
+    background: var(--drop-color);
+    border-radius: 3px;
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    display: block;
+    top: -4px;
+    left: 2px;
+    width: 2px;
+    height: 6px;
+    background: var(--drop-color);
+    border-radius: 50%;
+  }
+}
+
+.drop-medium-8 {
+  position: absolute;
+  z-index: 4;
+  left: 284px;
+  bottom: 90px;
+  opacity: .6;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--drop-color);
+  animation: drop 1.4s linear .6s infinite;
+  animation-fill-mode: both;
+
+  &::before {
+    position: absolute;
+    content: '';
+    display: block;
+    top: -2px;
+    left: 1px;
+    width: 4px;
+    height: 4px;
+    background: var(--drop-color);
+    border-radius: 3px;
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    display: block;
+    top: -4px;
+    left: 2px;
+    width: 2px;
+    height: 6px;
+    background: var(--drop-color);
+    border-radius: 50%;
+  }
+}
+
+.drop-medium-9 {
+  position: absolute;
+  z-index: 4;
+  left: 322px;
+  bottom: 90px;
+  opacity: .6;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--drop-color);
+  animation: drop 1.4s linear .4s infinite;
+  animation-fill-mode: both;
+
+  &::before {
+    position: absolute;
+    content: '';
+    display: block;
+    top: -2px;
+    left: 1px;
+    width: 4px;
+    height: 4px;
+    background: var(--drop-color);
+    border-radius: 3px;
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    display: block;
+    top: -4px;
+    left: 2px;
+    width: 2px;
+    height: 6px;
+    background: var(--drop-color);
+    border-radius: 50%;
+  }
+}
+
+.drop-medium-10 {
+  position: absolute;
+  z-index: 4;
+  left: 360px;
+  bottom: 90px;
+  opacity: .6;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--drop-color);
+  animation: drop 1.5s linear .2s infinite;
+  animation-fill-mode: both;
+
+  &::before {
+    position: absolute;
+    content: '';
+    display: block;
+    top: -2px;
+    left: 1px;
+    width: 4px;
+    height: 4px;
+    background: var(--drop-color);
+    border-radius: 3px;
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    display: block;
+    top: -4px;
+    left: 2px;
+    width: 2px;
+    height: 6px;
+    background: var(--drop-color);
+    border-radius: 50%;
+  }
+}
+
+.drop-small-1 {
+  position: absolute;
+  z-index: 4;
+  left: 18px;
+  bottom: 90px;
+  opacity: .3;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--drop-color);
+  animation: drop 2s linear .2s infinite;
+  animation-fill-mode: both;
+
+  &::before {
+    position: absolute;
+    content: '';
+    display: block;
+    top: -2px;
+    left: 1px;
+    width: 2px;
+    height: 2px;
+    background: var(--drop-color);
+    border-radius: 3px;
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    display: block;
+    top: -3px;
+    left: 1px;
+    width: 2px;
+    height: 4px;
+    background: var(--drop-color);
+    border-radius: 50%;
+  }
+}
+
+.drop-small-2 {
+  position: absolute;
+  z-index: 4;
+  left: 56px;
+  bottom: 90px;
+  opacity: .3;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--drop-color);
+  animation: drop 2.1s linear .4s infinite;
+  animation-fill-mode: both;
+
+  &::before {
+    position: absolute;
+    content: '';
+    display: block;
+    top: -2px;
+    left: 1px;
+    width: 2px;
+    height: 2px;
+    background: var(--drop-color);
+    border-radius: 3px;
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    display: block;
+    top: -3px;
+    left: 1px;
+    width: 2px;
+    height: 4px;
+    background: var(--drop-color);
+    border-radius: 50%;
+  }
+}
+
+.drop-small-3 {
+  position: absolute;
+  z-index: 4;
+  left: 94px;
+  bottom: 90px;
+  opacity: .3;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--drop-color);
+  animation: drop 2s linear .6s infinite;
+  animation-fill-mode: both;
+
+  &::before {
+    position: absolute;
+    content: '';
+    display: block;
+    top: -2px;
+    left: 1px;
+    width: 2px;
+    height: 2px;
+    background: var(--drop-color);
+    border-radius: 3px;
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    display: block;
+    top: -3px;
+    left: 1px;
+    width: 2px;
+    height: 4px;
+    background: var(--drop-color);
+    border-radius: 50%;
+  }
+}
+
+.drop-small-4 {
+  position: absolute;
+  z-index: 4;
+  left: 132px;
+  bottom: 90px;
+  opacity: .3;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--drop-color);
+  animation: drop 2.1s linear .8s infinite;
+  animation-fill-mode: both;
+
+  &::before {
+    position: absolute;
+    content: '';
+    display: block;
+    top: -2px;
+    left: 1px;
+    width: 2px;
+    height: 2px;
+    background: var(--drop-color);
+    border-radius: 3px;
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    display: block;
+    top: -3px;
+    left: 1px;
+    width: 2px;
+    height: 4px;
+    background: var(--drop-color);
+    border-radius: 50%;
+  }
+}
+
+.drop-small-5 {
+  position: absolute;
+  z-index: 4;
+  left: 170px;
+  bottom: 90px;
+  opacity: .3;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--drop-color);
+  animation: drop 2s linear 1s infinite;
+  animation-fill-mode: both;
+
+  &::before {
+    position: absolute;
+    content: '';
+    display: block;
+    top: -2px;
+    left: 1px;
+    width: 2px;
+    height: 2px;
+    background: var(--drop-color);
+    border-radius: 3px;
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    display: block;
+    top: -3px;
+    left: 1px;
+    width: 2px;
+    height: 4px;
+    background: var(--drop-color);
+    border-radius: 50%;
+  }
+}
+
+.drop-small-6 {
+  position: absolute;
+  z-index: 4;
+  left: 208px;
+  bottom: 90px;
+  opacity: .3;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--drop-color);
+  animation: drop 2.1s linear 1.2s infinite;
+  animation-fill-mode: both;
+
+  &::before {
+    position: absolute;
+    content: '';
+    display: block;
+    top: -2px;
+    left: 1px;
+    width: 2px;
+    height: 2px;
+    background: var(--drop-color);
+    border-radius: 3px;
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    display: block;
+    top: -3px;
+    left: 1px;
+    width: 2px;
+    height: 4px;
+    background: var(--drop-color);
+    border-radius: 50%;
+  }
+}
+
+.drop-small-7 {
+  position: absolute;
+  z-index: 4;
+  left: 246px;
+  bottom: 90px;
+  opacity: .3;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--drop-color);
+  animation: drop 2s linear 1.4s infinite;
+  animation-fill-mode: both;
+
+  &::before {
+    position: absolute;
+    content: '';
+    display: block;
+    top: -2px;
+    left: 1px;
+    width: 2px;
+    height: 2px;
+    background: var(--drop-color);
+    border-radius: 3px;
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    display: block;
+    top: -3px;
+    left: 1px;
+    width: 2px;
+    height: 4px;
+    background: var(--drop-color);
+    border-radius: 50%;
+  }
+}
+
+.drop-small-8 {
+  position: absolute;
+  z-index: 4;
+  left: 284px;
+  bottom: 90px;
+  opacity: .3;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--drop-color);
+  animation: drop 2.1s linear 1.6s infinite;
+  animation-fill-mode: both;
+
+  &::before {
+    position: absolute;
+    content: '';
+    display: block;
+    top: -2px;
+    left: 1px;
+    width: 2px;
+    height: 2px;
+    background: var(--drop-color);
+    border-radius: 3px;
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    display: block;
+    top: -3px;
+    left: 1px;
+    width: 2px;
+    height: 4px;
+    background: var(--drop-color);
+    border-radius: 50%;
+  }
+}
+
+.drop-small-9 {
+  position: absolute;
+  z-index: 4;
+  left: 322px;
+  bottom: 90px;
+  opacity: .3;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--drop-color);
+  animation: drop 2s linear 1.8s infinite;
+  animation-fill-mode: both;
+
+  &::before {
+    position: absolute;
+    content: '';
+    display: block;
+    top: -2px;
+    left: 1px;
+    width: 2px;
+    height: 2px;
+    background: var(--drop-color);
+    border-radius: 3px;
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    display: block;
+    top: -3px;
+    left: 1px;
+    width: 2px;
+    height: 4px;
+    background: var(--drop-color);
+    border-radius: 50%;
+  }
+}
+
+.drop-small-10 {
+  position: absolute;
+  z-index: 4;
+  left: 360px;
+  bottom: 90px;
+  opacity: .3;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--drop-color);
+  animation: drop 2.1s linear 2s infinite;
+  animation-fill-mode: both;
+
+  &::before {
+    position: absolute;
+    content: '';
+    display: block;
+    top: -2px;
+    left: 1px;
+    width: 2px;
+    height: 2px;
+    background: var(--drop-color);
+    border-radius: 3px;
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    display: block;
+    top: -3px;
+    left: 1px;
+    width: 2px;
+    height: 4px;
+    background: var(--drop-color);
+    border-radius: 50%;
+  }
+}
+
 @keyframes rise {
   0% { transform: translate(-20px,200px) }
   70% { transform: translate(0,-10px) }
   100% { transform: translate(0,0);}
+}
+
+@keyframes drop {
+  0% { transform: translate3d(40px,-320px,0) scaleX(1) scaleY(1) rotate(17deg) }
+  85% { transform: translate3d(0,0,0) scaleX(1) scaleY(1) rotate(17deg) }
+  100% { transform: translate3d(0,0,0) scaleX(3) scaleY(0) rotate(0) }
 }
