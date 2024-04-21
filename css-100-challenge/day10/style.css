@@ -35,7 +35,809 @@ body {
   width: 212px;
   height: 212px;
   background: #242424;
+  border: 6px solid #3a3a3a;
   border-radius: 50%;
-  border: 7px solid #3a3a3a;
   text-align: center;
+  align-content: center;
+}
+
+.point-set-1 {
+  position: absolute;
+  top: 13px;
+  left: 13px;
+  height: 172px;
+  width: 172px;
+  transform: rotate(0deg);
+
+  .point-1 {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    top: 0;
+    left: 50%;
+    background: #d3d3d3;
+    border-radius: 50%;
+  }
+
+  .point-2 {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    top: 50%;
+    right: 0;
+    background: #d3d3d3;
+    border-radius: 50%;
+  }
+
+  .point-3 {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    left: 50%;
+    bottom: 0;
+    background: #d3d3d3;
+    border-radius: 50%;
+  }
+
+  .point-4 {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    top: 50%;
+    left: 0;
+    background: #d3d3d3;
+    border-radius: 50%;
+  }
+}
+.point-set-2 {
+  position: absolute;
+  top: 13px;
+  left: 13px;
+  height: 172px;
+  width: 172px;
+  transform: rotate(6deg);
+
+  .point-1 {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    top: 0;
+    left: 50%;
+    background: #d3d3d3;
+    border-radius: 50%;
+  }
+
+  .point-2 {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    top: 50%;
+    right: 0;
+    background: #d3d3d3;
+    border-radius: 50%;
+  }
+
+  .point-3 {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    left: 50%;
+    bottom: 0;
+    background: #d3d3d3;
+    border-radius: 50%;
+  }
+
+  .point-4 {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    top: 50%;
+    left: 0;
+    background: #d3d3d3;
+    border-radius: 50%;
+  }
+}
+
+.point-set-3 {
+  position: absolute;
+  top: 13px;
+  left: 13px;
+  height: 172px;
+  width: 172px;
+  transform: rotate(12deg);
+
+  .point-1 {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    top: 0;
+    left: 50%;
+    background: #d3d3d3;
+    border-radius: 50%;
+  }
+
+  .point-2 {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    top: 50%;
+    right: 0;
+    background: #d3d3d3;
+    border-radius: 50%;
+  }
+
+  .point-3 {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    left: 50%;
+    bottom: 0;
+    background: #d3d3d3;
+    border-radius: 50%;
+  }
+
+  .point-4 {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    top: 50%;
+    left: 0;
+    background: #d3d3d3;
+    border-radius: 50%;
+  }
+}
+
+.point-set-4 {
+  position: absolute;
+  top: 13px;
+  left: 13px;
+  height: 172px;
+  width: 172px;
+  transform: rotate(18deg);
+
+  .point-1 {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    top: 0;
+    left: 50%;
+    background: #d3d3d3;
+    border-radius: 50%;
+  }
+
+  .point-2 {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    top: 50%;
+    right: 0;
+    background: #d3d3d3;
+    border-radius: 50%;
+  }
+
+  .point-3 {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    left: 50%;
+    bottom: 0;
+    background: #d3d3d3;
+    border-radius: 50%;
+  }
+
+  .point-4 {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    top: 50%;
+    left: 0;
+    background: #d3d3d3;
+    border-radius: 50%;
+  }
+}
+
+.point-set-5 {
+  position: absolute;
+  top: 13px;
+  left: 13px;
+  height: 172px;
+  width: 172px;
+  transform: rotate(24deg);
+
+  .point-1 {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    top: 0;
+    left: 50%;
+    background: #d3d3d3;
+    border-radius: 50%;
+  }
+
+  .point-2 {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    top: 50%;
+    right: 0;
+    background: #d3d3d3;
+    border-radius: 50%;
+  }
+
+  .point-3 {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    left: 50%;
+    bottom: 0;
+    background: #d3d3d3;
+    border-radius: 50%;
+  }
+
+  .point-4 {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    top: 50%;
+    left: 0;
+    background: #d3d3d3;
+    border-radius: 50%;
+  }
+}
+
+.point-set-6 {
+  position: absolute;
+  top: 13px;
+  left: 13px;
+  height: 172px;
+  width: 172px;
+  transform: rotate(30deg);
+
+  .point-1 {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    top: 0;
+    left: 50%;
+    background: #d3d3d3;
+    border-radius: 50%;
+  }
+
+  .point-2 {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    top: 50%;
+    right: 0;
+    background: #d3d3d3;
+    border-radius: 50%;
+  }
+
+  .point-3 {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    left: 50%;
+    bottom: 0;
+    background: #d3d3d3;
+    border-radius: 50%;
+  }
+
+  .point-4 {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    top: 50%;
+    left: 0;
+    background: #d3d3d3;
+    border-radius: 50%;
+  }
+}
+
+.point-set-7 {
+  position: absolute;
+  top: 13px;
+  left: 13px;
+  height: 172px;
+  width: 172px;
+  transform: rotate(36deg);
+
+  .point-1 {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    top: 0;
+    left: 50%;
+    background: #d3d3d3;
+    border-radius: 50%;
+  }
+
+  .point-2 {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    top: 50%;
+    right: 0;
+    background: #d3d3d3;
+    border-radius: 50%;
+  }
+
+  .point-3 {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    left: 50%;
+    bottom: 0;
+    background: #d3d3d3;
+    border-radius: 50%;
+  }
+
+  .point-4 {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    top: 50%;
+    left: 0;
+    background: #d3d3d3;
+    border-radius: 50%;
+  }
+}
+
+.point-set-8 {
+  position: absolute;
+  top: 13px;
+  left: 13px;
+  height: 172px;
+  width: 172px;
+  transform: rotate(42deg);
+
+  .point-1 {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    top: 0;
+    left: 50%;
+    background: #d3d3d3;
+    border-radius: 50%;
+  }
+
+  .point-2 {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    top: 50%;
+    right: 0;
+    background: #d3d3d3;
+    border-radius: 50%;
+  }
+
+  .point-3 {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    left: 50%;
+    bottom: 0;
+    background: #d3d3d3;
+    border-radius: 50%;
+  }
+
+  .point-4 {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    top: 50%;
+    left: 0;
+    background: #d3d3d3;
+    border-radius: 50%;
+  }
+}
+
+.point-set-9 {
+  position: absolute;
+  top: 13px;
+  left: 13px;
+  height: 172px;
+  width: 172px;
+  transform: rotate(48deg);
+
+  .point-1 {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    top: 0;
+    left: 50%;
+    background: #d3d3d3;
+    border-radius: 50%;
+  }
+
+  .point-2 {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    top: 50%;
+    right: 0;
+    background: #d3d3d3;
+    border-radius: 50%;
+  }
+
+  .point-3 {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    left: 50%;
+    bottom: 0;
+    background: #d3d3d3;
+    border-radius: 50%;
+  }
+
+  .point-4 {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    top: 50%;
+    left: 0;
+    background: #d3d3d3;
+    border-radius: 50%;
+  }
+}
+
+.point-set-10 {
+  position: absolute;
+  top: 13px;
+  left: 13px;
+  height: 172px;
+  width: 172px;
+  transform: rotate(54deg);
+
+  .point-1 {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    top: 0;
+    left: 50%;
+    background: #d3d3d3;
+    border-radius: 50%;
+  }
+
+  .point-2 {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    top: 50%;
+    right: 0;
+    background: #d3d3d3;
+    border-radius: 50%;
+  }
+
+  .point-3 {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    left: 50%;
+    bottom: 0;
+    background: #d3d3d3;
+    border-radius: 50%;
+  }
+
+  .point-4 {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    top: 50%;
+    left: 0;
+    background: #d3d3d3;
+    border-radius: 50%;
+  }
+}
+
+.point-set-11 {
+  position: absolute;
+  top: 13px;
+  left: 13px;
+  height: 172px;
+  width: 172px;
+  transform: rotate(60deg);
+
+  .point-1 {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    top: 0;
+    left: 50%;
+    background: #d3d3d3;
+    border-radius: 50%;
+  }
+
+  .point-2 {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    top: 50%;
+    right: 0;
+    background: #d3d3d3;
+    border-radius: 50%;
+  }
+
+  .point-3 {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    left: 50%;
+    bottom: 0;
+    background: #d3d3d3;
+    border-radius: 50%;
+  }
+
+  .point-4 {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    top: 50%;
+    left: 0;
+    background: #d3d3d3;
+    border-radius: 50%;
+  }
+}
+
+.point-set-12 {
+  position: absolute;
+  top: 13px;
+  left: 13px;
+  height: 172px;
+  width: 172px;
+  transform: rotate(66deg);
+
+  .point-1 {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    top: 0;
+    left: 50%;
+    background: #d3d3d3;
+    border-radius: 50%;
+  }
+
+  .point-2 {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    top: 50%;
+    right: 0;
+    background: #d3d3d3;
+    border-radius: 50%;
+  }
+
+  .point-3 {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    left: 50%;
+    bottom: 0;
+    background: #d3d3d3;
+    border-radius: 50%;
+  }
+
+  .point-4 {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    top: 50%;
+    left: 0;
+    background: #d3d3d3;
+    border-radius: 50%;
+  }
+}
+
+.point-set-13 {
+  position: absolute;
+  top: 13px;
+  left: 13px;
+  height: 172px;
+  width: 172px;
+  transform: rotate(72deg);
+
+  .point-1 {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    top: 0;
+    left: 50%;
+    background: #d3d3d3;
+    border-radius: 50%;
+  }
+
+  .point-2 {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    top: 50%;
+    right: 0;
+    background: #d3d3d3;
+    border-radius: 50%;
+  }
+
+  .point-3 {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    left: 50%;
+    bottom: 0;
+    background: #d3d3d3;
+    border-radius: 50%;
+  }
+
+  .point-4 {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    top: 50%;
+    left: 0;
+    background: #d3d3d3;
+    border-radius: 50%;
+  }
+}
+
+.point-set-14 {
+  position: absolute;
+  top: 13px;
+  left: 13px;
+  height: 172px;
+  width: 172px;
+  transform: rotate(78deg);
+
+  .point-1 {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    top: 0;
+    left: 50%;
+    background: #d3d3d3;
+    border-radius: 50%;
+  }
+
+  .point-2 {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    top: 50%;
+    right: 0;
+    background: #d3d3d3;
+    border-radius: 50%;
+  }
+
+  .point-3 {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    left: 50%;
+    bottom: 0;
+    background: #d3d3d3;
+    border-radius: 50%;
+  }
+
+  .point-4 {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    top: 50%;
+    left: 0;
+    background: #d3d3d3;
+    border-radius: 50%;
+  }
+}
+.point-set-15 {
+  position: absolute;
+  top: 13px;
+  left: 13px;
+  height: 172px;
+  width: 172px;
+  transform: rotate(84deg);
+
+  .point-1 {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    top: 0;
+    left: 50%;
+    background: #d3d3d3;
+    border-radius: 50%;
+  }
+
+  .point-2 {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    top: 50%;
+    right: 0;
+    background: #d3d3d3;
+    border-radius: 50%;
+  }
+
+  .point-3 {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    left: 50%;
+    bottom: 0;
+    background: #d3d3d3;
+    border-radius: 50%;
+  }
+
+  .point-4 {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    top: 50%;
+    left: 0;
+    background: #d3d3d3;
+    border-radius: 50%;
+  }
+}
+
+.spinner {
+  position: absolute;
+  width: 188px;
+  height: 188px;
+  border-radius: 50%;
+  top: 6px;
+  left: 6px;
+
+  circle {
+    stroke: #f85b5b;
+    stroke-width: 3;
+    fill: none;
+    stroke-dasharray: 625;
+    animation: spinner 5s linear infinite;
+    transform-origin: center center;
+    transform: rotate(-90deg);
+  }
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+
+  .time {
+    font-size: 40px;
+    font-weight: 700;
+  }
+
+  .health {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+
+    .beat img {
+      width: 10px;
+      margin-right: 3px;
+      animation: beat .9s ease-in-out infinite;
+    }
+  }
+}
+
+@keyframes spinner {
+  0% {
+    stroke-dashoffset: 625;
+    transform: rotate(-90deg) scaleY(1);
+  }
+
+  50% {
+    stroke-dashoffset: 0;
+    transform: rotate(-90deg) scaleY(1);
+  }
+
+  50.0001% {
+    transform: rotate(-90deg) scaleY(-1);
+  }
+
+  100% {
+    stroke-dashoffset: 625;
+    transform: rotate(-90deg) scaleY(-1);
+  }
+}
+
+@keyframes beat {
+  0% { transform: scale(1); }
+  35% { transform: scale(1.2); }
 }
