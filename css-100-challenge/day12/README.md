@@ -4,11 +4,11 @@
 
 Tooltip
 
-`Before click`
+`Before hover`
 
 <img src='./image-final-1.png' width=500>
 
-`After click`
+`After hover`
 
 <img src='image-final-2.png' width=500>
 
