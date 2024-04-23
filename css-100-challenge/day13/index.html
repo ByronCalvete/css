@@ -10,8 +10,74 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/01f24c8676.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <div class="frame"></div>
+    <div class="frame">
+      <div class="gallery"> 
+        <div class="profile" id="profile-1">
+          <img src="./img/beach.jpg" alt="Beach">
+          <div class="overlay"></div>
+          <div class="plus"></div>
+        </div>
+        <div class="profile" id="profile-2">
+          <img src="./img/farm.jpg" alt="Farm">
+          <div class="overlay"></div>
+          <div class="plus"></div>
+        </div>
+        <div class="profile" id="profile-3">
+          <img src="./img/jungle.jpg" alt="Jungle">
+          <div class="overlay"></div>
+          <div class="plus"></div>
+        </div>
+        <div class="profile" id="profile-4">
+          <img src="./img/mountain.jpg" alt="Mountain">
+          <div class="overlay"></div>
+          <div class="plus"></div>
+        </div>
+      </div>
+      <div class="detail" id="detail">
+        <div class="close"></div>
+        <div class="header">
+          <img src="./img/panda-bear.jpg" alt="Polar bear background">
+        </div>
+        <div class="image">
+          <img src="./img/panda-bear.jpg" alt="Panda bear">
+        </div>
+        <div class="infos">
+          <div class="name">
+            Rocky Calvete
+          </div>
+          <div class="action">
+            <div class="btn">
+              <span class="fa fa-phone"></span>
+            </div>
+            <div class="btn">
+              <span class="fa fa-comment"></span>
+            </div>
+            <div class="btn">
+              <span class="fa fa-heart"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const profile = document.querySelectorAll('.profile')
+      const detail = document.querySelector('.detail')
+      const close = document.querySelector('.close')
+
+      profile.forEach(element => element.addEventListener('click', () => {
+        console.log('click')
+        detail.classList.add('active')
+      }))
+
+      close.addEventListener('click', () => {
+        console.log('click2')
+        detail.classList.remove('active')
+      })
+    </script>
+
   </body>
 </html>

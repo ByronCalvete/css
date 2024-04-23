@@ -12,6 +12,6 @@ Challenge | [<img src='./day6/image-final.png' width=100>](day6) | [<img src='./
 
 Days | #11 | #12 | #13 | #14 | #15 
 --- | --- | --- | --- | --- | ---
-Challenge | [<img src='./day11/image-final.png' width=100>](day11) | [<img src='./day12/image-final-1.png' width=100>](day12) |  |  | 
+Challenge | [<img src='./day11/image-final.png' width=100>](day11) | [<img src='./day12/image-final-1.png' width=100>](day12) | [<img src='./day13/image-final-1.png' width=100>](day13) |  | 
 
 Taken from [CSS Challenge](https://100dayscss.com/about/)
