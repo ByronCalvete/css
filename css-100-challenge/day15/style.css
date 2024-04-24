@@ -40,36 +40,31 @@ body {
   border-radius: 3px;
   box-shadow: 8px 10px 15px 0 rgba(0,0,0,.2);
 
-  /* display: flex;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center; */
+  align-items: center;
 }
 
 .title {
   font-size: 16px;
   color: #676767;
   line-height: 50px;
-  height: 50px;
+  width: 100%;
   border-bottom: 1px solid #d8d8d8;
   text-align: center;
 }
 
 .dropzone {
-  position: absolute;
-  z-index: 1;
-  display: table;
-  table-layout: fixed;
-  align-content: center;
-
   width: 100px;
   height: 80px;
-  top: 86px;
-  left: 100px;
   border: 1px dashed #a4a4a4;
   border-radius: 3px;
   text-align: center;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   &.is-dragover {
     border-color: #666;
@@ -81,8 +76,10 @@ body {
   }
 
   .content {
-    display: table-cell;
-    vertical-align: middle;
+
+    img {
+      margin: 0;
+    }
   }
 
   .upload {
@@ -102,17 +99,19 @@ body {
 
   .input {
     position: absolute;
-    inset: 0;
+    width: 100px;
+    height: 80px;
+    transform: translate(-50%, -50%);
+    /* inset: 0; */
     opacity: 0;
   }
 }
 
 .upload-btn {
-  position: absolute;
   width: 140px;
   height: 40px;
-  left: 80px;
-  bottom: 24px;
+  z-index: 2;
+  margin-bottom: 24px;
   background: #6ece3b;
   border-radius: 3px;
   text-align: center;
