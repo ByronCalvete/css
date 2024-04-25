@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: rgb(216, 216, 216);
+}
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 400px;
+  border-radius: 5px;
+  box-shadow: 1px 2px 10px 0 rgba(0,0,0,.3);
+  background: #fff;
+  overflow: hidden;
+}
+
+.stripes {
+  position: relative;
+  top: -67px;
+  left: -100px;
+  width: 600px;
+  transform: rotate(45deg);
+
+  .stripe {
+    background: #353535;
+    width: 600px;
+    height: 3px;
+    margin-bottom: 16px;
+  }
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 260px;
+  height: 260px;
+  background: #353535;
+  border-radius: 3px;
+  box-shadow: 8px 10px 15px 0 rgba(0,0,0,.3);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.polygon {
+  width: 160px;
+  height: 140px;
+
+  .light {
+    fill: #eee;
+    transition: .5s ease-in-out;
+  }
+
+  .middle {
+    fill: #ccc;
+    transition: .5s ease-in-out;
+  }
+
+  .dark {
+    fill: #aaa;
+    transition: .5s ease-in-out;
+  }
+
+  &:hover {
+    .light {
+      fill: #aaa;
+    }
+
+    .middle {
+      fill: #eee;
+    }
+
+    .dark {
+      fill: #ccc;
+    }
+  }
+}
