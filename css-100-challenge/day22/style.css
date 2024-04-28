@@ -27,3 +27,50 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.headline {
+  font-weight: 600;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 22px;
+
+  small {
+    display: block;
+    font-size: 16px;
+    font-weight: 300;
+  }
+}
+
+.circle-big {
+  position: relative;
+  width: 114px;
+  height: 114px;
+
+  svg {
+    width: 114px;
+    height: 114px;
+  }
+
+  .bg {
+    fill: none;
+    stroke-width: 10px;
+    stroke: #1b2a33;
+  }
+
+  .progress {
+    fill: none;
+    stroke-width: 10px;
+    stroke: #27e1ae;
+    stroke-linecap: round;
+    stroke-dasharray: 326;
+    stroke-dashoffset: 60;
+  }
+}
