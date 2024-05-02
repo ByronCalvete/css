@@ -20,6 +20,6 @@ Challenge | [<img src='./day16/assets/image-final-1.png' width=100>](day16) | [<
 
 Days | #21 | #22 | #23 | #24 | #25 
 --- | --- | --- | --- | --- | ---
-Challenge | [<img src='./day21/assets/image-final.png' width=100>](day21) | [<img src='./day22/assets/image-final.png' width=100>](day22) |  |  | 
+Challenge | [<img src='./day21/assets/image-final.png' width=100>](day21) | [<img src='./day22/assets/image-final.png' width=100>](day22) | [<img src='./day23/assets/image-final.png' width=100>](day23) |  | 
 
 Taken from [CSS Challenge](https://100dayscss.com/about/)
