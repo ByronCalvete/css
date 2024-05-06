@@ -37,4 +37,90 @@ body {
   background: #fff;
   box-shadow: 4px 8px 12px 0 rgba(0,0,0,.1);
   border-radius: 3px;
+
+  .head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 30px;
+    height: 90px;
+    border-bottom: 1px solid #d4dce0;
+  }
+
+  .title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .subtitle {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  ul {
+    list-style: none;
+    padding: 4px 0;
+    margin: 0 30px;
+
+    li {
+      position: relative;
+      display: block;
+      margin: 24px 0;
+      height: 14px;
+    }
+
+    .text {
+      float: left;
+      font-size: 13px;
+      line-height: 14px;
+      cursor: pointer;
+      transition: .3s ease-in-out;
+    }
+
+    .button {
+      position: relative;
+      z-index: 2;
+      float: right;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      border: 1px solid #497081;
+      cursor: pointer;
+      transition: .4s ease-out .5s;
+    }
+
+    .checkmark {
+      position: absolute;
+      top: 2px;
+      right: 0;
+      stroke: #c8d4d9;
+      fill: none;
+      stroke-width: 1.5;
+      stroke-dasharray: 30 30;
+      stroke-dashoffset: 30;
+      transition: .5s ease-out;
+    }
+
+    input {
+      display: none;
+
+      &:checked ~ .text {
+        color: #c8d4d9;
+        text-decoration: line-through;
+      }
+
+      &:checked ~ .button {
+        transition: .4s ease-in;
+        transform: scale(1.5);
+        opacity: 0;
+      }
+
+      &:checked ~ .checkmark {
+        stroke-dashoffset: 0;
+        transition: .5s ease-out .4s;
+      }
+    }
+  }
 }
