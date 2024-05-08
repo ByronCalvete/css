@@ -4,6 +4,6 @@
 
 Random line animation
 
-<img src='' width=500>
+<img src='./assets/image-final.png' width=500>
 
 [Back to Home](..)
