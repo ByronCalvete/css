@@ -25,3 +25,146 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.counter {
+  position: absolute;
+  width: 130px;
+  height: 40px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 4px 8px 12px 0 rgba(0,0,0,.1);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  .minus {
+    z-index: 2;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: #fff;
+    transition: .3s ease-in-out;
+
+    .line {
+      position: relative;
+      left: 7px;
+      top: 15px;
+      height: 2px;
+      width: 18px;
+      background: #e26e6e;
+      transition: .3s ease-in-out;
+    }
+
+    &:hover {
+      background: #e26e6e;
+
+      .line {
+        background: #fff;
+      }
+    }
+  }
+
+  .plus {
+    z-index: 2;
+    width: 32px;
+    height: 32px;
+    border-radius: 32px;
+    cursor: pointer;
+    background: #fff;
+    transition: .3s ease-in-out;
+
+    .line-h {
+      position: relative;
+      height: 2px;
+      width: 18px;
+      left: 7px;
+      top: 15px;
+      background: #8ed273;
+      transition: .3s ease-in-out;
+    }
+
+    .line-v {
+      position: relative;
+      height: 18px;
+      width: 2px;
+      left: 15px;
+      top: 5px;
+      background: #8ed273;
+      transition: .3s ease-in-out;
+    }
+
+    &:hover {
+      background: #8ed273;
+
+      .line-h,
+      .line-v {
+        background: #fff;
+      }
+    }
+  }
+
+  .number {
+    width: 32px;
+    height: 32px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #6a85a0;
+    line-height: 32px;
+    text-align: center;
+
+    span {
+      &.fadeInUp {
+        animation: fadeIn .3s ease-out .15s backwards;
+        transform: scale(1);
+        opacity: 1;
+      }
+
+      &.fadeOutUp {
+        animation: fadeOut .3s ease-in;
+        transform: scale(1.4);
+        opacity: 0;
+      }
+
+      &.fadeInDown {
+        animation: fadeOut .3s ease-out .15s reverse backwards;
+        transform: scale(1);
+        opacity: 1;
+      }
+
+      &.fadeOutDown {
+        animation: fadeIn .3s ease-in reverse;
+        transform: scale(.6);
+        opacity: 0;
+      }
+    }
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    transform: scale(0.6);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1.4);
+    opacity: 0;
+  }
+}
