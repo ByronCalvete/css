@@ -118,6 +118,8 @@ body {
     text-align: center;
 
     span {
+      display: block; /* Should be block because by default it dispplay is static and don't let them to scale */
+
       &.fadeInUp {
         animation: fadeIn .3s ease-out .15s backwards;
         transform: scale(1);
