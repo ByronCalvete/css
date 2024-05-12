@@ -10,6 +10,6 @@ Hello animation
 
 `Animation`
 
-<img src='./assets/image-final-2.png' width=100>
+<img src='./assets/image-final-2.png' width=500>
 
 [Back to Home](..)
