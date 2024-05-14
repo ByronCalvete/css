@@ -15,3 +15,5 @@ Simple carousel
 `Spinning`
 
 <img src='./assets/image-final-3.png' width=500>
+
+[Back to Home](..)
