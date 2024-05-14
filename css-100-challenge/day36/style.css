@@ -21,4 +21,100 @@ body {
   overflow: hidden;
 }
 
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 320px;
+  height: 240px;
+  background: #fff;
+  box-shadow: 4px 8px 12px 0 rgba(0,0,0,.1);
 
+  .top {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    height: 40px;
+    width: 100%;
+    background: #3d4d5e;
+  }
+
+  input[type='radio'] {
+    display: none;
+  }
+
+  .tab {
+    position: relative;
+    float: left;
+    z-index: 3;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 38px;
+    color: #8398ad;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background .5s ease-in-out;
+
+    &.search {
+      float: right;
+    }
+
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  input[type='radio']:checked + .tab {
+    background: #5da2ed;
+    color: #fff;
+  }
+
+  .content {
+    position: absolute;
+    top: 40px;
+    color: #000;
+
+    .box {
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      transform: translateY(3px);
+      pointer-events: none;
+      padding: 25px;
+      transition: .3s ease-in;
+
+      h2 {
+        font-weight: 400;
+        font-size: 16px;
+        color: #415868;
+        margin: 0;
+        padding: 0;
+      }
+
+      p {
+        margin: 17px 0;
+
+        span {
+          display: block;
+          height: 4px;
+          background: #e9e9e9;
+          margin: 6px 0;
+        }
+      }
+    }
+  }
+}
+
+#tab-1:checked ~ .content #box-1,
+#tab-2:checked ~ .content #box-2,
+#tab-3:checked ~ .content #box-3,
+#tab-4:checked ~ .content #box-4 {
+  pointer-events: all;
+  opacity: 1;
+  transform: translateY(0);
+  transition: .5s ease-out .4s;
+}
