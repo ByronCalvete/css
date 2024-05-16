@@ -32,6 +32,6 @@ Challenge | [<img src='./day31/assets/image-final-1.png' width=100>](day31) | [<
 
 Days | #36 | #37 | #38 | #39 | #40 
 --- | --- | --- | --- | --- | ---
-Challenge | [<img src='./day36/assets/image-final-1.png' width=100>](day36) | [<img src='./day37/assets/image-final-1.png' width=100>](day37) | [<img src='./day38/assets/image-final-1.png' width=100>](day38) |  | 
+Challenge | [<img src='./day36/assets/image-final-1.png' width=100>](day36) | [<img src='./day37/assets/image-final-1.png' width=100>](day37) | [<img src='./day38/assets/image-final-1.png' width=100>](day38) | [<img src='./day39/assets/image-final-1.png' width=100>](day39) | 
 
 Taken from [CSS Challenge](https://100dayscss.com/about/)
