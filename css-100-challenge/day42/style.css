@@ -1854,32 +1854,32 @@ body {
 
 .shooting-star-1 {
   top: 7px;
-  animation: 25s shooting-star 15.6s infinite;
+  animation: 5s shooting-star 15.6s infinite;
 }
 
 .shooting-star-2 {
   top: 46px;
-  animation: 22s shooting-star 14.9s infinite;
+  animation: 2s shooting-star 14.9s infinite;
 }
 
 .shooting-star-3 {
   top: 34px;
-  animation: 23s shooting-star 4.8s infinite;
+  animation: 3s shooting-star 4.8s infinite;
 }
 
 .shooting-star-4 {
   top: 10px;
-  animation: 22s shooting-star 22.8s infinite;
+  animation: 2s shooting-star 22.8s infinite;
 }
 
 .shooting-star-5 {
   top: 7px;
-  animation: 22s shooting-star 7s infinite;
+  animation: 2s shooting-star 7s infinite;
 }
 
 .shooting-star-6 {
   top: 20px;
-  animation: 25s shooting-star 6.4s infinite;
+  animation: 5s shooting-star 6.4s infinite;
 }
 
 @keyframes flickr {
@@ -1887,7 +1887,7 @@ body {
   50% { opacity: .2 }
 }
 
-@keyframes shooting {
+@keyframes shooting-star {
   0% { transform: translate3d(0,0,0) rotate(20deg) }
-  10%, 100% { transform: translate3d(451px, 164px, 0) rotate(20deg) }
+  100% { transform: translate3d(451px, 164px, 0) rotate(20deg) }
 }
