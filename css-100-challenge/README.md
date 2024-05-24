@@ -46,4 +46,8 @@ Days | #51 | #52 | #53 | #54 | #55
 --- | --- | --- | --- | --- | ---
 Challenge | [<img src='./day51/assets/image-final-1.png' width=100>](day51) | [<img src='./day52/assets/image-final.png' width=100>](day52) | [<img src='./day53/assets/image-final.png' width=100>](day53) | [<img src='./day54/assets/final-image.png' width=100>](day54) | [<img src='./day55/assets/image-final-1.png' width=100>](day55)
 
+Days | #56 | #57 | #58 | #59 | #60 
+--- | --- | --- | --- | --- | ---
+Challenge | [<img src='./day56/assets/image-final-1.png' width=100>](day56) |  |  |  | 
+
 Taken from [CSS Challenge](https://100dayscss.com/about/)
