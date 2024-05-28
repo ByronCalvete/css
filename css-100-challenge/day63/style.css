@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: rgb(216,216,216);
+}
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 400px;
+  background: #27ae60;
+  box-shadow: 1px 2px 10px 0 rgba(0,0,0,.3);
+  border-radius: 5px;
+  overflow: hidden;
+
+  .circle {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 100px;
+    left: 100px;
+    border-radius: 50%;
+    border: 2px dotted #fff;
+  }
+
+  .circle-1 { animation: circle 10s ease-in-out 0.2s infinite both }
+  .circle-2 { animation: circle 10s ease-in-out 0.4s infinite both }
+  .circle-3 { animation: circle 10s ease-in-out 0.6s infinite both }
+  .circle-4 { animation: circle 10s ease-in-out 0.8s infinite both }
+  .circle-5 { animation: circle 10s ease-in-out 1s infinite both }
+  .circle-6 { animation: circle 10s ease-in-out 1.2s infinite both }
+  .circle-7 { animation: circle 10s ease-in-out 1.4s infinite both }
+  .circle-8 { animation: circle 10s ease-in-out 1.6s infinite both }
+  .circle-9 { animation: circle 10s ease-in-out 1.8s infinite both }
+  .circle-10 { animation: circle 10s ease-in-out 2s infinite both }
+  .circle-11 { animation: circle 10s ease-in-out 2.2s infinite both }
+  .circle-12 { animation: circle 10s ease-in-out 2.4s infinite both }
+  .circle-13 { animation: circle 10s ease-in-out 2.6s infinite both }
+  .circle-14 { animation: circle 10s ease-in-out 2.8s infinite both }
+  .circle-15 { animation: circle 10s ease-in-out 3s infinite both }
+  .circle-16 { animation: circle 10s ease-in-out 3.2s infinite both }
+  .circle-17 { animation: circle 10s ease-in-out 3.4s infinite both }
+  .circle-18 { animation: circle 10s ease-in-out 3.6s infinite both }
+  .circle-19 { animation: circle 10s ease-in-out 3.8s infinite both }
+  .circle-20 { animation: circle 10s ease-in-out 4s infinite both }
+  .circle-21 { animation: circle 10s ease-in-out 4.2s infinite both }
+  .circle-22 { animation: circle 10s ease-in-out 4.4s infinite both }
+  .circle-23 { animation: circle 10s ease-in-out 4.6s infinite both }
+  .circle-24 { animation: circle 10s ease-in-out 4.8s infinite both }
+  .circle-25 { animation: circle 10s ease-in-out 5s infinite both }
+  .circle-26 { animation: circle 10s ease-in-out 5.2s infinite both }
+  .circle-27 { animation: circle 10s ease-in-out 5.4s infinite both }
+  .circle-28 { animation: circle 10s ease-in-out 5.6s infinite both }
+  .circle-29 { animation: circle 10s ease-in-out 5.8s infinite both }
+  .circle-30 { animation: circle 10s ease-in-out 6s infinite both }
+  .circle-31 { animation: circle 10s ease-in-out 6.2s infinite both }
+  .circle-32 { animation: circle 10s ease-in-out 6.4s infinite both }
+  .circle-33 { animation: circle 10s ease-in-out 6.6s infinite both }
+  .circle-34 { animation: circle 10s ease-in-out 6.8s infinite both }
+  .circle-35 { animation: circle 10s ease-in-out 7s infinite both }
+  .circle-36 { animation: circle 10s ease-in-out 7.2s infinite both }
+  .circle-37 { animation: circle 10s ease-in-out 7.4s infinite both }
+  .circle-38 { animation: circle 10s ease-in-out 7.6s infinite both }
+  .circle-39 { animation: circle 10s ease-in-out 7.8s infinite both }
+  .circle-40 { animation: circle 10s ease-in-out 8s infinite both }
+  .circle-41 { animation: circle 10s ease-in-out 8.2s infinite both }
+  .circle-42 { animation: circle 10s ease-in-out 8.4s infinite both }
+  .circle-43 { animation: circle 10s ease-in-out 8.6s infinite both }
+  .circle-44 { animation: circle 10s ease-in-out 8.8s infinite both }
+  .circle-45 { animation: circle 10s ease-in-out 9s infinite both }
+  .circle-46 { animation: circle 10s ease-in-out 9.2s infinite both }
+  .circle-47 { animation: circle 10s ease-in-out 9.4s infinite both }
+  .circle-48 { animation: circle 10s ease-in-out 9.6s infinite both }
+  .circle-49 { animation: circle 10s ease-in-out 9.8s infinite both }
+  .circle-50 { animation: circle 10s ease-in-out 10s infinite both }
+}
+
+@keyframes circle {
+  0% {
+    transform: scale(0) translate(-200px, -200px);
+    opacity: .4;
+  }
+
+  100% {
+    transform: scale(3.5) translate(0,0);
+    opacity: 1;
+  }
+}
