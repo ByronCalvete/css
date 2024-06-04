@@ -56,6 +56,6 @@ Challenge | [<img src='./day61/assets/image-final-1.png' width=100>](day61) | [<
 
 Days | #66 | #67 | #68 | #69 | #70 
 --- | --- | --- | --- | --- | ---
-Challenge | [<img src='./day66/assets/image-final-1.png' width=100>](day66) |  |  |  | 
+Challenge | [<img src='./day66/assets/image-final-1.png' width=100>](day66) | [<img src='./day67/assets/image-final.png' width=100>](day67) |  |  | 
 
 Taken from [CSS Challenge](https://100dayscss.com/about/)
