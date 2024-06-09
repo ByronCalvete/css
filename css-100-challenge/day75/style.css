@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: rgb(216,216,216);
+}
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 400px;
+  background: #d33526;
+  border-radius: 5px;
+  box-shadow: 1px 2px 10px 0 rgba(0,0,0,.3);
+  
+  .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    perspective: 1500px;
+    
+    .ball-big {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      animation: ball 7s ease-in-out infinite;
+      transform-style: preserve-3d;
+      
+      .plane {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        background: #fff;
+        border-radius: 50%;
+        opacity: .3;
+      }
+      
+      .plane-1 { transform: rotateX(0) }
+      .plane-2 { transform: rotateX(30deg) }
+      .plane-3 { transform: rotateX(60deg) }
+      .plane-4 { transform: rotateX(90deg) }
+      .plane-5 { transform: rotateX(120deg) }
+      .plane-6 { transform: rotateX(150deg) }
+    }
+  }
+}
+
+@keyframes ball {
+  0% { transform: rotateY(0) rotateX(0) rotateZ(0) }
+  25% { transform: rotateY(45deg) rotateX(180deg) rotateZ(20deg) }
+  50% { transform: rotateY(225deg) rotateX(0) rotateZ(90deg) }
+  75% { transform: rotateY(0) rotateX(45deg) rotateZ(120deg) }
+  100% { transform: rotateY(0) rotateX(0) rotateZ(0) }
+}
