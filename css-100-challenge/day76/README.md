@@ -8,7 +8,7 @@ Reveal key
 
 <img src='./assets/image-final-1.png' width=500>
 
-`Secrey key`
+`Secret key`
 
 <img src='./assets/image-final-2.png' width=500>
 
