@@ -64,6 +64,10 @@ Challenge | [<img src='./day71/assets/image-final-1.png' width=100>](day71) | [<
 
 Days | #76 | #77 | #78 | #79 | #80 
 --- | --- | --- | --- | --- | ---
-Challenge | [<img src='./day76/assets/image-final-1.png' width=100>](day76) | [<img src='./day77/assets/image-final-2.png' width=100>](day77) | [<img src='./day78/assets/image-final-1.png' width=100>](day78) | [<img src='./day79/assets/image-final-1.png' width=100>](day79) | [<img src='./day80/assets/image-final-1.png' width=100>](day80) 
+Challenge | [<img src='./day76/assets/image-final-1.png' width=100>](day76) | [<img src='./day77/assets/image-final-2.png' width=100>](day77) | [<img src='./day78/assets/image-final-1.png' width=100>](day78) | [<img src='./day79/assets/image-final-1.png' width=100>](day79) | [<img src='./day80/assets/image-final-1.png' width=100>](day80)
+
+Days | #81 | #82 | #83 | #84 | #85 
+--- | --- | --- | --- | --- | ---
+Challenge | [<img src='./day81/assets/image-final-1.png' width=100>](day81) |  |  |  | 
 
 Taken from [CSS Challenge](https://100dayscss.com/about/)
