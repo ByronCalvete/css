@@ -78,4 +78,8 @@ Days | #91 | #92 | #93 | #94 | #95
 --- | --- | --- | --- | --- | ---
 Challenge | [<img src='./day91/assets/image-final-1.png' width=100>](day91) | [<img src='./day92/assets/image-final-1.png' width=100>](day92) | [<img src='./day93/assets/image-final.png' width=100>](day93) | [<img src='./day94/assets/image-final.png' width=100>](day94) | [<img src='./day95/assets/image-final.png' width=100>](day95)
 
+Days | #96 | #97 | #98 | #99 | #100 
+--- | --- | --- | --- | --- | ---
+Challenge | [<img src='./day96/assets/image-final-1.png' width=100>](day96) |  |  |  | 
+
 Taken from [CSS Challenge](https://100dayscss.com/about/)
