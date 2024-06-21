@@ -1,0 +1,270 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: rgb(216,216,216);
+}
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 400px;
+  background: #2c3e50;
+  border-radius: 5px;
+  box-shadow: 1px 2px 10px 0 rgba(0,0,0,.3);
+  overflow: hidden;
+
+  .edges {
+    position: absolute;
+    z-index: 5;
+    width: 160px;
+    height: 160px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    .edge {
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-style: solid;
+    }
+
+    .t {
+      top: 0;
+      left: 0;
+      border-width: 80px 80px 0 80px;
+      border-color: #3f91c7 transparent transparent transparent;
+      animation: edge-t 1.5s cubic-bezier(.19,.69,.4,1) infinite alternate;
+    }
+
+    .l {
+      top: 0;
+      left: 0;
+      border-width: 80px 0 80px 80px;
+      border-color: transparent transparent transparent #3289c3;
+      animation: edge-l 1.5s cubic-bezier(.19,.69,.4,1) infinite alternate;
+    }
+
+    .r {
+      top: 0;
+      right: 0;
+      border-width: 80px 80px 80px 0;
+      border-color: transparent #2b82bb transparent transparent;
+      animation: edge-r 1.5s cubic-bezier(.19,.69,.4,1) infinite alternate;
+    }
+
+    .b {
+      bottom: 0;
+      right: 0;
+      border-width: 0 80px 80px 80px;
+      border-color: transparent transparent #2578ae transparent;
+      animation: edge-b 1.5s cubic-bezier(.19,.69,.4,1) infinite alternate;
+    }
+  }
+
+  .elements {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    .square {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      top: 5px;
+      left: 5px;
+
+      &.small {
+        width: 10px;
+        height: 10px;
+        top: 10px;
+        left: 10px;
+      }
+
+      &.big {
+        width: 30px;
+        height: 30px;
+        top: 0;
+        left: 0;
+      }
+
+      &.c1 {
+        background: #f39c12;
+      }
+
+      &.c2 {
+        background: #e67e22;
+      }
+
+      &.c3 {
+        background: #1abc9c;
+      }
+    }
+
+    .square-1 { animation: square-1 1.5s cubic-bezier(.19,.69,.4,1) infinite alternate }
+    .square-2 { animation: square-2 1.5s cubic-bezier(.19,.69,.4,1) infinite alternate }
+    .square-3 { animation: square-3 1.5s cubic-bezier(.19,.69,.4,1) infinite alternate }
+    .square-4 { animation: square-4 1.5s cubic-bezier(.19,.69,.4,1) infinite alternate }
+    .square-5 { animation: square-5 1.5s cubic-bezier(.19,.69,.4,1) infinite alternate }
+    .square-6 { animation: square-6 1.5s cubic-bezier(.19,.69,.4,1) infinite alternate }
+    .square-7 { animation: square-7 1.5s cubic-bezier(.19,.69,.4,1) infinite alternate }
+    .square-8 { animation: square-8 1.5s cubic-bezier(.19,.69,.4,1) infinite alternate }
+
+    .circle {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      border-style: solid;
+      border-width: 4px;
+      top: 5px;
+      left: 5px;
+
+      &.small {
+        width: 10px;
+        height: 10px;
+        border-width: 2px;
+        top: 10px;
+        left: 10px;
+      }
+
+      &.big {
+        width: 30px;
+        height: 30px;
+        border-width: 8px;
+        top: 0;
+        left: 0;
+      }
+
+      &.c1 {
+        border-color: #f39c12;
+      }
+
+      &.c2 {
+        border-color: #e67e22;
+      }
+
+      &.c3 {
+        border-color: #1abc9c;
+      }
+    }
+
+    .circle-1 { animation: circle-1 1.5s cubic-bezier(.19,.69,.4,1) infinite alternate }
+    .circle-2 { animation: circle-2 1.5s cubic-bezier(.19,.69,.4,1) infinite alternate }
+    .circle-3 { animation: circle-3 1.5s cubic-bezier(.19,.69,.4,1) infinite alternate }
+    .circle-4 { animation: circle-4 1.5s cubic-bezier(.19,.69,.4,1) infinite alternate }
+    .circle-5 { animation: circle-5 1.5s cubic-bezier(.19,.69,.4,1) infinite alternate }
+    .circle-6 { animation: circle-6 1.5s cubic-bezier(.19,.69,.4,1) infinite alternate }
+    .circle-7 { animation: circle-7 1.5s cubic-bezier(.19,.69,.4,1) infinite alternate }
+    .circle-8 { animation: circle-8 1.5s cubic-bezier(.19,.69,.4,1) infinite alternate }
+  }
+}
+
+@keyframes edge-t {
+  0%, 20% { transform: translateY(0) }
+  100% { transform: translateY(-180px) }
+}
+
+@keyframes edge-l {
+  0%, 20% { transform: translateX(0) }
+  100% { transform: translateX(-180px) }
+}
+
+@keyframes edge-r {
+  0%, 20% { transform: translateX(0) }
+  100% { transform: translateX(180px) }
+}
+
+@keyframes edge-b {
+  0%, 20% { transform: translateY(0) }
+  100% { transform: translateY(180px) }
+}
+
+@keyframes square-1 {
+  0%, 20% { transform: scale(0) translate(0) rotate(0) }
+  100% { transform: scale(1) translate(66px, 78px) rotate(110deg) }
+}
+
+@keyframes square-2 {
+  0%, 20% { transform: scale(0) translate(0) rotate(0) }
+  100% { transform: scale(1) translate(46px, -141px) rotate(163deg) }
+}
+
+@keyframes square-3 {
+  0%, 20% { transform: scale(0) translate(0) rotate(0) }
+  100% { transform: scale(1) translate(131px, -117px) rotate(126deg) }
+}
+
+@keyframes square-4 {
+  0%, 20% { transform: scale(0) translate(0) rotate(0) }
+  100% { transform: scale(1) translate(91px, -94px) rotate(122deg) }
+}
+
+@keyframes square-5 {
+  0%, 20% { transform: scale(0) translate(0) rotate(0) }
+  100% { transform: scale(1) translate(131px, -10px) rotate(111deg) }
+}
+
+@keyframes square-6 {
+  0%, 20% { transform: scale(0) translate(0) rotate(0) }
+  100% { transform: scale(1) translate(-94px, -66px) rotate(125deg) }
+}
+
+@keyframes square-7 {
+  0%, 20% { transform: scale(0) translate(0) rotate(0) }
+  100% { transform: scale(1) translate(-102px, 50px) rotate(139deg) }
+}
+
+@keyframes square-8 {
+  0%, 20% { transform: scale(0) translate(0) rotate(0) }
+  100% { transform: scale(1) translate(-62px, 20px) rotate(118deg) }
+}
+
+@keyframes circle-1 {
+  0%, 20% { transform: scale(0) translate(0) }
+  100% { transform: scale(1) translate(13px, -113px) }
+}
+
+@keyframes circle-2 {
+  0%, 20% { transform: scale(0) translate(0) }
+  100% { transform: scale(1) translate(29px, -71px) }
+}
+
+@keyframes circle-3 {
+  0%, 20% { transform: scale(0) translate(0) }
+  100% { transform: scale(1) translate(1px, -72px) }
+}
+
+@keyframes circle-4 {
+  0%, 20% { transform: scale(0) translate(0) }
+  100% { transform: scale(1) translate(-62px, 132px) }
+}
+
+@keyframes circle-5 {
+  0%, 20% { transform: scale(0) translate(0) }
+  100% { transform: scale(1) translate(18px, 86px) }
+}
+
+@keyframes circle-6 {
+  0%, 20% { transform: scale(0) translate(0) }
+  100% { transform: scale(1) translate(62px, 15px) }
+}
+
+@keyframes circle-7 {
+  0%, 20% { transform: scale(0) translate(0) }
+  100% { transform: scale(1) translate(74px, -25px) }
+}
+
+@keyframes circle-8 {
+  0%, 20% { transform: scale(0) translate(0) }
+  100% { transform: scale(1) translate(95px, -45px) }
+}
