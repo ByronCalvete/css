@@ -1,7 +1,6 @@
 # Pro Path - Guide
 
 ## Index
-- [Module 0 - Fundamentals Recap](module_0)
 - [Module 1 - Rendering Logic I](module_1)
 - [Module 2 - Rendering Logic II](module_2)
 - [Module 3 - Modern Component Architecture](module_3)
