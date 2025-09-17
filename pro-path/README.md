@@ -10,3 +10,7 @@
 - [Module 7 - CSS Grid](module_7)
 - [Module 8 - Animations](module_8)
 - [Module 9 - Little Big Details](module_9)
+
+## Resources
+- [Color Formats in CSS](https://www.joshwcomeau.com/css/color-formats/)
+- [The Surprising Truth About Pixels and Accessibility](https://www.joshwcomeau.com/css/surprising-truth-about-pixels-and-accessibility/)
